@@ -1,0 +1,25 @@
+{
+  "version": 3,
+  "file": "script.js",
+  "names": [
+    "form",
+    "React",
+    "createElement",
+    "Fragment",
+    "type",
+    "root",
+    "ReactDOM",
+    "createRoot",
+    "document",
+    "getElementById",
+    "render"
+  ],
+  "sources": [
+    "../script.js"
+  ],
+  "sourcesContent": [
+    "//-----------------------------CREATE ELEMENT--------------------\r\n\r\n/*\r\nconst h1=React.createElement(\r\n    'h1',{className:\"subheading\"},\"Harsh Singh\"\r\n)\r\nconst root=ReactDOM.createRoot(document.getElementById('root'))\r\nroot.render(h1)\r\n*/\r\n\r\n//-----------------------------CREATE ELEMENT AS OBJECT--------------------\r\n\r\n/*\r\nconst h1={        //Same as React.createElement as written above\r\n    $$typeof:Symbol.for('react.element'),\r\n    type:'h1',\r\n    ref:null,\r\n    props:{\r\n        className:'subheading',\r\n        children:\"Harsh Singh\"\r\n    }\r\n}\r\nconst root=ReactDOM.createRoot(document.getElementById('root'))\r\nroot.render(h1)\r\n*/\r\n\r\n//-----------------------------MULTIPLE CREATE ELEMENT IN ARRAY---------------------\r\n\r\n/*\r\nconst h1=React.createElement(\r\n    'h1',{className:\"subheading\"},\"Harsh Singh\"\r\n)\r\nconst button=React.createElement(\r\n    'button',{className:\"btn\"},\"CLick Me\"\r\n)\r\nconst div=React.createElement(\r\n    'div',\r\n    {className:\"container\"},\r\n    [h1,button]\r\n)\r\n\r\n\r\nconst root=ReactDOM.createRoot(document.getElementById('root'))\r\nroot.render(div)\r\n\r\n*/\r\n\r\n//-----------------------------CREATE ELEMENT BY JSX---------------------\r\n\r\n/*\r\nconst h2=<h2>Harsh Singh</h2>\r\nconst root=ReactDOM.createRoot(document.getElementById('root'))\r\nroot.render(h2)\r\n\r\n*/\r\n\r\n//-----------------------------JSX---------------------\r\n\r\n/*\r\nJSX stands for JavaScript XML.\r\nJSX allows us to write HTML in React.\r\nJSX makes it easier to write and add HTML in React.\r\nJSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement()  and/or appendChild() methods.\r\n\r\n*/\r\n\r\n\r\n//-----------------------------BABEL---------------------\r\n\r\n/*\r\nBabel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current\r\nand older browsers or environments. Here are the main things Babel can do for you:\r\n\r\nTransform syntax\r\nPolyfill features that are missing in your target environment (through a third-party polyfill such as core-js)\r\nSource code transformations (codemods)\r\n\r\n*/\r\n\r\n//-----------------------------EXAMPLE BY CREATE ELEMENT---------------------\r\n\r\n/*\r\nconst form=React.createElement('form',null,[\r\n    React.createElement('input',{type:'text'}),\r\n    React.createElement('input',{type:'text'}),\r\n    React.createElement('button',{type:'submit'},'Submit')\r\n])\r\n\r\nconst root=ReactDOM.createRoot(document.getElementById('root'))\r\nroot.render(form)\r\n\r\n*/\r\n\r\n//-----------------------------EXAMPLE BY JSX---------------------\r\n\r\n\r\nconst form=(\r\n    <>\r\n    <input type='text'></input>\r\n    <input type='text'></input>\r\n    <button type='submit'>Submit</button>\r\n    </>\r\n)\r\nconst root=ReactDOM.createRoot(document.getElementById('root'))\r\nroot.render(form)\r\n\r\n\r\n\r\n"
+  ],
+  "mappings": "AAAA;;AAEA;AACA;AACA;AACA;AACA;AACA;AACA;;AAEA;;AAEA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;AAEA;;AAEA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;AAEA;;AAEA;AACA;AACA;AACA;AACA;AACA;;AAEA;;AAEA;AACA;AACA;AACA;AACA;AACA;AACA;;AAGA;;AAEA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;AAEA;;AAEA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;AAEA;;AAGA,MAAMA,IAAI,gBACNC,KAAA,CAAAC,aAAA,CAAAD,KAAA,CAAAE,QAAA,qBACAF,KAAA,CAAAC,aAAA;EAAOE,IAAI,EAAC;AAAM,CAAQ,CAAC,eAC3BH,KAAA,CAAAC,aAAA;EAAOE,IAAI,EAAC;AAAM,CAAQ,CAAC,eAC3BH,KAAA,CAAAC,aAAA;EAAQE,IAAI,EAAC;AAAQ,GAAC,QAAc,CAClC,CACL;AACD,MAAMC,IAAI,GAACC,QAAQ,CAACC,UAAU,CAACC,QAAQ,CAACC,cAAc,CAAC,MAAM,CAAC,CAAC;AAC/DJ,IAAI,CAACK,MAAM,CAACV,IAAI,CAAC",
+  "ignoreList": []
+}
